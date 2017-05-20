@@ -7,6 +7,7 @@
 			<h1>Incendios en España entre 2004 y 2014</h1>
 			<table border=1 cellpadding=7>
 				<tr>
+					<th>URL</th>
 				    <th>Superficie Forestal Quemada</th>
 				    <th>Fecha</th>
 				    <th>Muertos</th>
@@ -19,6 +20,7 @@
 				</tr>
 			{% for obj in object_list %}
 				<tr>
+					<td><a href="{{ obj['IDPIF'] }}/">{{ obj['IDPIF'] }}</a></td>
 				    <td>{{ obj['SUPQUEMADA'] }}</td>
 				    <td>{{ obj['FECHA'] }}</td>
 				    <td>{{ obj['MUERTOS'] }}</td>
